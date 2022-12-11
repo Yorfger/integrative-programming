@@ -146,7 +146,10 @@ public class viewpage extends javax.swing.JFrame {
         }
     
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> dac7dc4d5697517f869b6d46900d223a4b623de6
     public void load()
     {
         int a;
@@ -165,10 +168,17 @@ public class viewpage extends javax.swing.JFrame {
                 for(int i = 1; i < a; i++)
                 {
                         v2.add(rs.getString("id"));
+<<<<<<< HEAD
                         v2.add(rs.getString("type"));
                         v2.add(rs.getString("serial"));
                         v2.add(rs.getString("name"));
                         v2.add(rs.getString("quantity"));
+=======
+                        v2.add(rs.getString("name"));
+                        v2.add(rs.getString("phone"));
+                        v2.add(rs.getString("email"));
+                        v2.add(rs.getString("address"));
+>>>>>>> dac7dc4d5697517f869b6d46900d223a4b623de6
                 }
                 df.addRow(v2);
                     
