@@ -54,7 +54,7 @@ public class viewpage extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Admin ID", "Admin Name", "Phone", "Email", "Address"
+                "Item ID", "Item Type", "Serial Number", "Item Name", "Quantity"
             }
         ) {
             Class[] types = new Class [] {
@@ -146,13 +146,10 @@ public class viewpage extends javax.swing.JFrame {
         }
     
     }
-<<<<<<< HEAD
-    
-=======
->>>>>>> dac7dc4d5697517f869b6d46900d223a4b623de6
+
     public void load()
     {
-        int a;
+         int a;
         try {
             pst = con.prepareStatement("select * from vendor");
             ResultSet rs = pst.executeQuery();
@@ -168,17 +165,10 @@ public class viewpage extends javax.swing.JFrame {
                 for(int i = 1; i < a; i++)
                 {
                         v2.add(rs.getString("id"));
-<<<<<<< HEAD
                         v2.add(rs.getString("type"));
                         v2.add(rs.getString("serial"));
                         v2.add(rs.getString("name"));
                         v2.add(rs.getString("quantity"));
-=======
-                        v2.add(rs.getString("name"));
-                        v2.add(rs.getString("phone"));
-                        v2.add(rs.getString("email"));
-                        v2.add(rs.getString("address"));
->>>>>>> dac7dc4d5697517f869b6d46900d223a4b623de6
                 }
                 df.addRow(v2);
                     
@@ -189,6 +179,7 @@ public class viewpage extends javax.swing.JFrame {
         }
     
     }
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
